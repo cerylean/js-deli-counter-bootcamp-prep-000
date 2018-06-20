@@ -1,7 +1,10 @@
 var katzDeli = []
 
-function takeANumber(line,name) { var i = line.length + 1;
-  line.push(name); return `Welcome, ${name}. You are number ${i} in line.`}
+//function takeANumber(line,name) { var i = line.length + 1;
+//  line.push(name); return `Welcome, ${name}. You are number ${i} in line.`}
+  
+  function takeANumber(line) { var i = line.length + 1;
+  line.push(i); return `Welcome, you are number ${i} in line.`}
   
   function nowServing(line) { if(line.length===0) {return "There is nobody waiting to be served!"} else { return ("Currently serving "+line.shift()+".")}}
   
